@@ -9,10 +9,10 @@
 	</parent>
 
 	<groupId>com.sadatmalik</groupId>
-	<artifactId>order-microservice</artifactId>
+	<artifactId>ms-beer-order-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>order-microservice</name>
+	<name>ms-beer-order-service</name>
 
 	<description>Example order generation micro-service for Spring Boot</description>
 
