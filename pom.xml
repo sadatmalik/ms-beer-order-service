@@ -17,6 +17,7 @@
 	<description>Example order generation micro-service for Spring Boot</description>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
