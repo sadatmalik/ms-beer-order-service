@@ -1,6 +1,6 @@
 package com.sadatmalik.orderservice.services.beer;
 
-import com.sadatmalik.orderservice.web.model.BeerDto;
+import com.sadatmalik.brewery.model.BeerDto;
 
 import java.util.Optional;
 import java.util.UUID;

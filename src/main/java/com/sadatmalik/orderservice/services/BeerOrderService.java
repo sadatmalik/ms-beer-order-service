@@ -1,8 +1,8 @@
 package com.sadatmalik.orderservice.services;
 
 
-import com.sadatmalik.orderservice.web.model.BeerOrderDto;
-import com.sadatmalik.orderservice.web.model.BeerOrderPagedList;
+import com.sadatmalik.brewery.model.BeerOrderDto;
+import com.sadatmalik.brewery.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;

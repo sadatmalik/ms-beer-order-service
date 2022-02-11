@@ -1,7 +1,7 @@
 package com.sadatmalik.orderservice.web.mappers;
 
+import com.sadatmalik.brewery.model.BeerOrderLineDto;
 import com.sadatmalik.orderservice.domain.BeerOrderLine;
-import com.sadatmalik.orderservice.web.model.BeerOrderLineDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

@@ -1,11 +1,11 @@
 package com.sadatmalik.orderservice.services;
 
+import com.sadatmalik.brewery.model.BeerOrderDto;
+import com.sadatmalik.brewery.model.BeerOrderLineDto;
 import com.sadatmalik.orderservice.bootstrap.BeerOrderBootStrap;
 import com.sadatmalik.orderservice.domain.Customer;
 import com.sadatmalik.orderservice.repositories.BeerOrderRepository;
 import com.sadatmalik.orderservice.repositories.CustomerRepository;
-import com.sadatmalik.orderservice.web.model.BeerOrderDto;
-import com.sadatmalik.orderservice.web.model.BeerOrderLineDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.sadatmalik.orderservice.web.model;
+package com.sadatmalik.brewery.model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

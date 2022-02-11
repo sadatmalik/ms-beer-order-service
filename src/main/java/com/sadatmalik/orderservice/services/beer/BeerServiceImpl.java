@@ -1,6 +1,6 @@
 package com.sadatmalik.orderservice.services.beer;
 
-import com.sadatmalik.orderservice.web.model.BeerDto;
+import com.sadatmalik.brewery.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;

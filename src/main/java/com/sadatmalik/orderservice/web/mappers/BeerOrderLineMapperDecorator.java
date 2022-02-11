@@ -1,9 +1,9 @@
 package com.sadatmalik.orderservice.web.mappers;
 
+import com.sadatmalik.brewery.model.BeerDto;
+import com.sadatmalik.brewery.model.BeerOrderLineDto;
 import com.sadatmalik.orderservice.domain.BeerOrderLine;
 import com.sadatmalik.orderservice.services.beer.BeerService;
-import com.sadatmalik.orderservice.web.model.BeerDto;
-import com.sadatmalik.orderservice.web.model.BeerOrderLineDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 

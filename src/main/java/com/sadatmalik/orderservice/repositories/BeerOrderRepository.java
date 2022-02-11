@@ -1,9 +1,9 @@
 package com.sadatmalik.orderservice.repositories;
 
 
+import com.sadatmalik.brewery.model.OrderStatusEnum;
 import com.sadatmalik.orderservice.domain.BeerOrder;
 import com.sadatmalik.orderservice.domain.Customer;
-import com.sadatmalik.orderservice.domain.OrderStatusEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

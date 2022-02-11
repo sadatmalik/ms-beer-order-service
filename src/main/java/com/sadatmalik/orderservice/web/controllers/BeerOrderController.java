@@ -1,8 +1,8 @@
 package com.sadatmalik.orderservice.web.controllers;
 
+import com.sadatmalik.brewery.model.BeerOrderDto;
+import com.sadatmalik.brewery.model.BeerOrderPagedList;
 import com.sadatmalik.orderservice.services.BeerOrderService;
-import com.sadatmalik.orderservice.web.model.BeerOrderDto;
-import com.sadatmalik.orderservice.web.model.BeerOrderPagedList;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
