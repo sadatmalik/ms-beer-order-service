@@ -15,6 +15,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class CustomerDto {
+
     @JsonProperty("id")
     private UUID id = null;
 
@@ -29,6 +30,6 @@ public class CustomerDto {
     @JsonProperty("lastModifiedDate")
     private OffsetDateTime lastModifiedDate = null;
 
-    private String name;
+    private String customerName;
 
 }

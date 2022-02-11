@@ -1,6 +1,6 @@
 package com.sadatmalik.orderservice.sm.actions;
 
-import com.sadatmalik.brewery.model.events.AllocateOrderRequest;
+import com.sadatmalik.brewery.model.events.DeallocateOrderRequest;
 import com.sadatmalik.orderservice.config.JmsConfig;
 import com.sadatmalik.orderservice.domain.BeerOrder;
 import com.sadatmalik.orderservice.domain.BeerOrderEventEnum;
@@ -19,9 +19,9 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
-@Component
 @RequiredArgsConstructor
-public class AllocateOrderAction implements Action<BeerOrderStatusEnum, BeerOrderEventEnum> {
+@Component
+public class DeallocateOrderAction implements Action<BeerOrderStatusEnum, BeerOrderEventEnum> {
 
     private final JmsTemplate jmsTemplate;
     private final BeerOrderRepository beerOrderRepository;
@@ -33,11 +33,11 @@ public class AllocateOrderAction implements Action<BeerOrderStatusEnum, BeerOrde
         Optional<BeerOrder> beerOrderOptional = beerOrderRepository.findById(UUID.fromString(beerOrderId));
 
         beerOrderOptional.ifPresentOrElse(beerOrder -> {
-                    jmsTemplate.convertAndSend(JmsConfig.ALLOCATE_ORDER_QUEUE,
-                            AllocateOrderRequest.builder()
+            jmsTemplate.convertAndSend(JmsConfig.DEALLOCATE_ORDER_QUEUE,
+                    DeallocateOrderRequest.builder()
                             .beerOrderDto(beerOrderMapper.beerOrderToDto(beerOrder))
                             .build());
-                    log.debug("Sent Allocation Request for order id: " + beerOrderId);
-                }, () -> log.error("Beer Order Not Found!"));
+            log.debug("Sent Deallocation Request for order id: " + beerOrderId);
+        }, () -> log.error("Beer Order Not Found!"));
     }
 }

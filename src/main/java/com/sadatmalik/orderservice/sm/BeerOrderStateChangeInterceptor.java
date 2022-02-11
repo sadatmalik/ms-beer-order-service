@@ -43,6 +43,5 @@ public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdap
                     beerOrder.setOrderStatus(state.getId());
                     beerOrderRepository.saveAndFlush(beerOrder);
                 });
-
     }
 }
